@@ -989,7 +989,27 @@
             }
 
             .project-with-image {
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .project-with-image > div {
+                display: contents;
+            }
+
+            .project-with-image .project-header {
+                order: 1;
+            }
+
+            .project-with-image .project-image {
+                order: 2;
+                margin: 1.5rem 0;
+            }
+
+            .project-with-image p,
+            .project-with-image .project-highlights,
+            .project-with-image .project-tech {
+                order: 3;
             }
 
             .project-header {
